@@ -9,7 +9,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                        <a class="navbar-brand" href="index.php"><img src="assets/images/logo.png" alt="logo"></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
                         <button class="close-navbar"><i class="ti-close"></i></button>

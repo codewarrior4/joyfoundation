@@ -75,8 +75,11 @@
                                         <i class="ti-location-pin"></i>
                                     </div>
                                     <h5>Our Location</h5>
+                                    <p style="font-size:30px;font-weight:bold">JGCF office in Nigeria</p>
                                     <p>No 4. Suite 6, Adetutu Plaza, Association Avenue, opposite Governor’s road, off college Bus-Stop, Ikotun, Lagos,</p>
                                     <p>Nigeria</p>
+                                    <br> <br>
+                                    <p style="font-size:30px;font-weight:bold">JGCF office in USA</p>
                                     <p>2308 Lee Ct, Apt. 206 Tampa, FL 33607</p>
                                     <p>USA</p>
                                 </li>

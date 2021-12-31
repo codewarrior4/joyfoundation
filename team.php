@@ -23,6 +23,12 @@
     <link href="assets/css/nice-select.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/light.css" rel="stylesheet">
+    <style>
+        .grid .img-holder img{
+            width: 360px;
+            height: 480px;
+        }
+    </style>
 </head>
 
 <body class="light-theme">
@@ -63,7 +69,7 @@
                     <div class="col col-lg-6 col-lg-offset-3">
                         <div class="section-title text-center">
                             <span>Meet Our Team</span>
-                            <h2>Our Expert Volunteer</h2>
+                            <h2>Our Team</h2>
                         </div>
                     </div>
                 </div>
@@ -72,29 +78,92 @@
                         <div class="team-grids clearfix">
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/team-1.jpg" alt>
+                                    <img src="assets/images/team/image00001.jpg" alt>
                                 </div>
                                 <div class="details">
-                                    <h3><a href="volunteer.html">Devin Robertson</a></h3>
-                                    <p>CEO & Founder</p>
+                                    <h3><a href="#">Folashade Logan</a></h3>
+                                    
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/team-2.jpg" alt>
+                                    <img src="assets/images/team/image00004.jpg" alt>
                                 </div>
                                 <div class="details">
-                                    <h3><a href="volunteer.html">Rickey Goodman</a></h3>
-                                    <p>Volunteer</p>
+                                    <h3><a href="#">Frank Logan</a></h3>
+                                    
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/team-3.jpg" alt>
+                                    <img src="assets/images/team/image00009.jpg" style="width: 400px !important;" alt>
                                 </div>
                                 <div class="details">
-                                    <h3><a href="volunteer.html">Jean Washington</a></h3>
-                                    <p>Volunteer</p>
+                                    <h3><a href="#">Chioma Adigwe</a></h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="img-holder">
+                                    <img src="assets/images/team/image00005.jpg" alt>
+                                </div>
+                                <div class="details">
+                                    <h3><a href="#">Gbenga Dada</a></h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="img-holder">
+                                    <img src="assets/images/team/image00003.jpg" alt>
+                                </div>
+                                <div class="details">
+                                    <h3><a href="#">Awodele Seun</a></h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="img-holder">
+                                    <img src="assets/images/team/image00008.jpg" alt>
+                                </div>
+                                <div class="details">
+                                    <h3><a href="#">Oluwaseyifunmi Agunbiade</a></h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="img-holder">
+                                    <img src="assets/images/team/image00007.jpg" alt>
+                                </div>
+                                <div class="details">
+                                    <h3><a href="#">Godwin Ebisanmi</a></h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="img-holder">
+                                    <img src="assets/images/team/image00010.jpg" alt>
+                                </div>
+                                <div class="details">
+                                    <h3><a href="#">Ndubisi Adigwe</a></h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="img-holder">
+                                    <img src="assets/images/team/image00002.jpg" alt>
+                                </div>
+                                <div class="details">
+                                    <h3><a href="#">Temitope Raji</a></h3>
+                                    
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="img-holder">
+                                    <img src="assets/images/team/image00006.jpg" alt>
+                                </div>
+                                <div class="details">
+                                    <h3><a href="#">Adetola Akinwunmi</a></h3>
+                                    
                                 </div>
                             </div>
                         </div>

@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="tp-breadcumb-wrap">
-                            <h2>Donate Now</h2>
+                            <h2>Help Us Give All The Joy We Can</h2>
                             <ul>
                                 <li><a href="index.php">Home</a></li>
                                 <li><span>Donate</span></li>
@@ -69,6 +69,7 @@
                             <div class="thumb-text">
                                 <span>Donate</span>
                             </div>
+                            <p class="lead">Thank you for your decision to donate to Joy Givers Charity Foundation. God recognizes your commitment to making the world a better place by putting a smile on the faces of our needy elderly ones, orphans and widows.</p>
                             <h2>Make a Naira Donation</h2>
                             <p class="lead">You can make donations into the below Account Numbers</p>
                             <p class="font-weight-bold">ZENITH BANK</p>
@@ -79,9 +80,21 @@
 
                         </div>
                         
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="section-title text-center">
+                            
+                            <h2>Make a Dollar Donation</h2>
+                            <iframe src="https://givebutter.com/embed/c/joygiverscharity" width="100%" height="615px" style="max-width: 601px;" name="givebutter" frameborder="0" scrolling="no" seamless allowpaymentrequest></iframe>
+                                
+
+                        </div>
+                        
                         <div id="Donations" class="tab-pane">
                             
-                        <iframe src="https://givebutter.com/embed/c/joygiverscharity" width="100%" height="615px" style="max-width: 601px;" name="givebutter" frameborder="0" scrolling="no" seamless allowpaymentrequest></iframe>
+                            
                         </div>
                     </div>
                 </div>
