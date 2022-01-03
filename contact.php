@@ -96,7 +96,7 @@
                                         <i class="ti-email"></i>
                                     </div>
                                     <h5>Email</h5>
-                                    <p><a href="mailto:support@joygiverscharityfoundation.com">support@joygiverscharityfoundation.com</a></p>
+                                    <p><a href="mailto:info@joygiverscharity.com">info@joygiverscharity.com</a></p>
                                 </li>
                             </ul>
                         </div>
@@ -107,7 +107,7 @@
                                 <h2>Quick Contact Form</h2>
                             </div>
                             <div class="contact-form">
-                                <form method="post" class="contact-validation-active" id="contact-form">
+                                <form method="post" action="mail.php" class="contact-validation-active">
                                     <div>
                                         <input type="text" class="form-control"  name="name" id="name" placeholder="Name*">
                                     </div>
@@ -118,21 +118,26 @@
                                         <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
                                     </div>
                                     <div>
-                                        <input type="text" class="form-control" name="subject" id="phone" placeholder="Subject*">
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject*">
                                     </div>
                                     <div class="comment-area">
                                         <textarea  name="message"  id="note" placeholder="Message*"></textarea>
                                     </div>
                                     <div class="submit-area">
-                                        <button type="submit" class="theme-btn">Submit Now</button>
+                                        <button type="submit" name="mail" class="theme-btn">Submit Now</button>
                                         <div id="loader">
                                             <i class="ti-reload"></i>
                                         </div>
                                     </div>
-                                    <div class="clearfix error-handling-messages">
-                                        <div id="success">Thank you</div>
-                                        <div id="error"> Error occurred while sending email. Please try again later. </div>
-                                    </div>
+                                    
+                                    <?php 
+                                        if(isset($_GET['sent'])){
+                                            echo '<div class="row clearfix ">
+                                                <div id="alert alert-success">You have successfully sent us a message.</div>
+                                        </div>';
+                                        }
+                                    ?>
+                                    
                                 </form>
                             </div>
                         </div>
@@ -157,7 +162,7 @@
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
                                 <h3>Subscribe our Newsletter</h3>
-                                <p>Get the latest news update from us.</p>
+                                <p>Please subscribe to our periodic newsletter to obtain updates about our future projects.</p>
                                 <div class="newsletter-form">
                                     <form>
                                         <div>

@@ -78,7 +78,7 @@
                         <div class="team-grids clearfix">
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00001.jpg" alt>
+                                    <img src="assets/images/team/IMG_3515.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Folashade Logan</a></h3>
@@ -180,7 +180,7 @@
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
                                 <h3>Subscribe our Newsletter</h3>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                                <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
                                     <form>
                                         <div>

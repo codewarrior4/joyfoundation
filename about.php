@@ -71,6 +71,8 @@
                                 </ul>
                             </div>
                         </div>
+                        <p class=" lead h2 text-center" style="color:black !important;font-weight:bold">Founder's Address</p>
+
                     </div>
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-content">
@@ -159,7 +161,7 @@
             </div>
         </div>
 
-        <div class="tp-counter-area">
+        <!-- <div class="tp-counter-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -192,7 +194,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!-- news-letter-section start-->
         <section class="news-letter-section">
@@ -202,7 +204,7 @@
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
                                 <h3>Subscribe our Newsletter</h3>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                                <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
                                     <form>
                                         <div>

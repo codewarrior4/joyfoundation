@@ -155,7 +155,7 @@
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
                                 <h3>Subscribe our Newsletter</h3>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                                <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
                                     <form>
                                         <div>

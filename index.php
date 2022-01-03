@@ -161,6 +161,7 @@
                                 </ul>
                             </div>
                         </div>
+                        <p class=" lead h2 text-center" style="color:black !important;font-weight:bold">Founder's Address</p>
                     </div>
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-content">
@@ -185,7 +186,7 @@
         <!-- about-area end-->
         
         <!-- .tp-counter-area start -->
-        <div class="tp-counter-area">
+        <!-- <div class="tp-counter-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -218,7 +219,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- .tp-counter-area end -->
         <!--Start project area-->
         <section id="protfolio" class="gallery-section section-padding">
@@ -318,65 +319,38 @@
                     <div class="col col-lg-6 col-lg-offset-3">
                         <div class="section-title text-center">
                             <span>Meet Our Team</span>
-                            <h2>Our Expert Volunteer</h2>
+                            <!-- <h2>Our Expert Volunteer</h2> -->
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="team-grids clearfix">
-                            <div class="grid">
+                        <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/team-1.jpg" alt>
+                                    <img src="assets/images/team/IMG_3515.jpg" alt>
                                 </div>
                                 <div class="details">
-                                    <h3><a href="volunteer.html">Devin Robertson</a></h3>
-                                    <p>CEO & Founder</p>
+                                    <h3><a href="#">Folashade Logan</a></h3>
+                                    
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/team-2.jpg" alt>
+                                    <img src="assets/images/team/image00004.jpg" alt>
                                 </div>
                                 <div class="details">
-                                    <h3><a href="volunteer.html">Rickey Goodman</a></h3>
-                                    <p>Volunteer</p>
+                                    <h3><a href="#">Frank Logan</a></h3>
+                                    
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/team-3.jpg" alt>
+                                    <img src="assets/images/team/image00009.jpg" style="width: 400px !important;" alt>
                                 </div>
                                 <div class="details">
-                                    <h3><a href="volunteer.html">Jean Washington</a></h3>
-                                    <p>Volunteer</p>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/team/team-3.jpg" alt>
-                                </div>
-                                <div class="details">
-                                    <h3><a href="volunteer.html">Jean Washington</a></h3>
-                                    <p>Volunteer</p>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/team/team-3.jpg" alt>
-                                </div>
-                                <div class="details">
-                                    <h3><a href="volunteer.html">Jean Washington</a></h3>
-                                    <p>Volunteer</p>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/team/team-3.jpg" alt>
-                                </div>
-                                <div class="details">
-                                    <h3><a href="volunteer.html">Jean Washington</a></h3>
-                                    <p>Volunteer</p>
+                                    <h3><a href="#">Chioma Adigwe</a></h3>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -460,7 +434,7 @@
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
                                 <h3>Subscribe our Newsletter</h3>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                                <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
                                     <form>
                                         <div>

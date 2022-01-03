@@ -23,11 +23,7 @@
     <link href="assets/css/nice-select.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/light.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 </head>
 
 <body class="light-theme">
@@ -72,6 +68,9 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="event-grids clearfix">
+                            <?php 
+
+                            ?>
                             <div class="grid">
                                 <div class="img-holder">
                                     <img src="assets/images/event/img-1.jpg" alt>
@@ -158,7 +157,7 @@
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
                                 <h3>Subscribe our Newsletter</h3>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                                <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
                                     <form>
                                         <div>
