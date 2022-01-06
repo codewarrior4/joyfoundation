@@ -46,7 +46,7 @@
             <div class="hero-slider">
                 <div class="slide">
                     <div class="container">
-                        <img src="assets/images/sade/image00017.jpg" alt class="slider-bg">
+                        <img loading="lazy=" loading="lazy=" src="assets/images/sade/image00017.jpg" alt class="slider-bg">
                         <div class="row">
                             <div class="col col-md-6 slide-caption">
                                 <div class="slide-title">
@@ -65,7 +65,7 @@
                 </div>
                 <div class="slide">
                     <div class="container">
-                        <img src="assets/images/sade/image00099.jpeg" alt class="slider-bg">
+                        <img loading="lazy=" src="assets/images/sade/image00099.jpeg" alt class="slider-bg">
                         <div class="row">
                             <div class="col col-md-6 slide-caption">
                                 <div class="slide-title">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="slide">
                     <div class="container">
-                        <img src="assets/images/sade/image00013.jpg" alt class="slider-bg">
+                        <img loading="lazy=" src="assets/images/sade/image00013.jpg" alt class="slider-bg">
                         <div class="row">
                             <div class="col col-md-6 slide-caption">
                                 <div class="slide-title">
@@ -105,45 +105,7 @@
         </section>
         <!-- end of hero slider -->
         <!--features start -->
-        <div class="features-area ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-salad"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Health For</p>
-                                <h3>Healthy Food</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-school"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Get Free</p>
-                                <h3>Pure Education</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-medicine"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Get Free</p>
-                                <h3>Medical Facilities</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <!--features-features end -->
         <!-- about-area start-->
         <div class="about-style-2">
@@ -151,7 +113,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-img">
-                            <img src="assets/images/sade/image00010.jpeg" alt="">
+                            <img loading="lazy=" src="assets/images/sade/image00010.jpeg" alt="">
                             <div class="video-btn">
                                 <ul>
                                     <li><a href="https://www.youtube.com/embed/uQBL7pSAXR8?autoplay=1" class="video-btn" data-type="iframe">
@@ -176,7 +138,7 @@
                                 <div><a class="theme-btn" href="about.php">More About Us..</a></div>
                             </div>
                             <!-- <div class="signature">
-                                <img src="assets/images/img-1.png" alt="">
+                                <img loading="lazy=" src="assets/images/img-1.png" alt="">
                             </div> -->
                         </div>
                     </div>
@@ -235,7 +197,7 @@
                         <div class="gallery-container gallery-fancybox masonry-gallery">
                             <div class="grid Charity Volunteering Sponsorship">
                                 <a href="galleries.php" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/images/gallery/img-1.jpg" alt class="img img-responsive">
+                                    <img loading="lazy=" src="assets/images/gallery/img-1.jpg" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -248,7 +210,7 @@
                             </div>
                             <div class="grid Child Charity Volunteering">
                                 <a href="assets/images/gallery/img-2.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/images/gallery/img-2.jpg" alt class="img img-responsive">
+                                    <img loading="lazy=" src="assets/images/gallery/img-2.jpg" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -260,7 +222,7 @@
                             </div>
                             <div class="grid Charity Sponsorship">
                                 <a href="assets/images/gallery/img-3.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/images/gallery/img-3.jpg" alt class="img img-responsive">
+                                    <img loading="lazy=" src="assets/images/gallery/img-3.jpg" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -272,7 +234,7 @@
                             </div>
                             <div class="grid Child Volunteering">
                                 <a href="assets/images/gallery/img-4.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/images/gallery/img-4.jpg" alt class="img img-responsive">
+                                    <img loading="lazy=" src="assets/images/gallery/img-4.jpg" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -284,7 +246,7 @@
                             </div>
                             <div class="grid Charity Sponsorship">
                                 <a href="assets/images/gallery/img-5.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/images/gallery/img-5.jpg" alt class="img img-responsive">
+                                    <img loading="lazy=" src="assets/images/gallery/img-5.jpg" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -296,7 +258,7 @@
                             </div>
                             <div class="grid Child Charity Sponsorship Volunteering">
                                 <a href="assets/images/gallery/img-6.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="assets/images/gallery/img-6.jpg" alt class="img img-responsive">
+                                    <img loading="lazy=" src="assets/images/gallery/img-6.jpg" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -326,9 +288,9 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="team-grids clearfix">
-                        <div class="grid">
+                            <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/IMG_3515.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/IMG_3515.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Folashade Logan</a></h3>
@@ -337,7 +299,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00004.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00004.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Frank Logan</a></h3>
@@ -346,12 +308,17 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00009.jpg" style="width: 400px !important;" alt>
+                                    <img loading="lazy=" src="assets/images/team/chioma.jpeg" style="width: 400px !important;" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Chioma Adigwe</a></h3>
                                     
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row col-sm-offset-5">
+                            <div class="btns">
+                                <a href="team.php" class="theme-btn">See More</a>
                             </div>
                         </div>
                     </div>
@@ -369,42 +336,23 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="event-grids clearfix">
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/event/img-1.jpg" alt>
+                            <?php 
+                                include 'zeus/connect.php';
+                                $query = mysqli_query($connect,"SELECT * FROM events order by date desc limit 3");
+                                while($row = mysqli_fetch_array($query)){ ?>
+                                <div class="grid">
+                                    <div class="img-holder">
+                                        <img loading="lazy=" src="zeus/home/images/<?=$row['image'] ?>" alt>
+                                    </div>
+                                    <div class="details">
+                                        <ul class="entry-meta">
+                                            <li><a href="#"><i class="ti-calendar"></i> <?=$row['date'] ?></a></li>
+                                        </ul>
+                                        <h3><a href="events.php?id=<?=$row['id'] ?>"><?=$row['title'] ?></a></h3>
+                                    </div>
                                 </div>
-                                <div class="details">
-                                    <ul class="entry-meta">
-                                        <li><a href="#"><i class="ti-calendar"></i> 20 sep 2018</a></li>
-                                        <li><a href="#"><i class="ti-folder"></i> Education</a></li>
-                                    </ul>
-                                    <h3><a href="events.php">Education for All Children</a></h3>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/event/img-2.jpg" alt>
-                                </div>
-                                <div class="details">
-                                    <ul class="entry-meta">
-                                        <li><a href="#"><i class="ti-calendar"></i> 20 sep 2018</a></li>
-                                        <li><a href="#"><i class="ti-folder"></i> Food</a></li>
-                                    </ul>
-                                    <h3><a href="events.php">Food for All Everyone</a></h3>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/event/img-3.jpg" alt>
-                                </div>
-                                <div class="details">
-                                    <ul class="entry-meta">
-                                        <li><a href="#"><i class="ti-calendar"></i> 20 sep 2018</a></li>
-                                        <li><a href="#"><i class="ti-folder"></i> Treatment</a></li>
-                                    </ul>
-                                    <h3><a href="events.php">Free Treatment</a></h3>
-                                </div>
-                            </div>
+                               <?php }?>
+                            
                         </div>
                     </div>
                 </div>
@@ -417,7 +365,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="tp-cta-text">
-                            <h2>You Can Help The Poor With Us</h2>
+                            <h2>Help Us Give All The Joy We Can</h2>
                             <div class="btns">
                                 <a href="donate.php" class="theme-btn">Donate Now</a>
                             </div>
@@ -433,14 +381,31 @@
                     <div class="row">
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
-                                <h3>Subscribe our Newsletter</h3>
+                                <h3>Subscribe to our Newsletter</h3>
                                 <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
-                                    <form>
+                                <form method="post" action="">
                                         <div>
-                                            <input type="text" placeholder="Enter Your Email" class="form-control">
-                                            <button class="bigCursor" type="submit">Subscribe</button>
+                                            <input type="email" name="email" placeholder="Enter Your Email" required class="form-control">
+                                            <button class="bigCursor" name="submit" type="submit">Subscribe</button>
                                         </div>
+                                        <?php
+                                            include 'zeus/connect.php';
+
+                                            if (isset($_POST['submit']))
+                                            {
+                                                
+                                                $email = $_POST['email'];
+                                                $query = mysqli_query($connect, "INSERT INTO newsletters values('','$email',now())");
+                                                if($query){
+                                                    //  header('Location:index.php');
+                                                    echo '<script>swal("Good job!", "You have subscribed to our newsletter!", "success")</script>';
+                                                    echo '<script>location.replace("index.php")</script>';
+                                                } else{
+                                                    echo mysqli_error($query);
+                                                }
+                                            }
+                                        ?>
                                     </form>
                                 </div>
                             </div>

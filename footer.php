@@ -61,7 +61,7 @@
                                         <li><a href="programmes.php">Our Programmes</a></li>
                                         <li><a href="donate.php">Donate</a></li>
                                         <li><a href="contact.php">Contact Us</a></li>
-                                        <li><a href="event.php">Upcoming Events</a></li>
+                                        <li><a href="event.php"> Events</a></li>
                                     </ul>
                                 </div>
                             </div>

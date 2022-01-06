@@ -88,6 +88,7 @@
                                         <i class="ti-mobile"></i>
                                     </div>
                                     <h5>Phone</h5>
+                                    <p>+2349064085101 </p>
                                     <p>+2347031041484 </p>
                                     <p>+17277290591</p>
                                 </li>
@@ -161,14 +162,31 @@
                     <div class="row">
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
-                                <h3>Subscribe our Newsletter</h3>
+                                <h3>Subscribe to our Newsletter</h3>
                                 <p>Please subscribe to our periodic newsletter to obtain updates about our future projects.</p>
                                 <div class="newsletter-form">
-                                    <form>
+                                <form method="post" action="">
                                         <div>
-                                            <input type="text" placeholder="Enter Your Email" class="form-control">
-                                            <button class="bigCursor" type="submit">Subscribe</button>
+                                            <input type="email" name="email" placeholder="Enter Your Email" required class="form-control">
+                                            <button class="bigCursor" name="submit" type="submit">Subscribe</button>
                                         </div>
+                                        <?php
+                                            include 'zeus/connect.php';
+
+                                            if (isset($_POST['submit']))
+                                            {
+                                                
+                                                $email = $_POST['email'];
+                                                $query = mysqli_query($connect, "INSERT INTO newsletters values('','$email',now())");
+                                                if($query){
+                                                    //  header('Location:index.php');
+                                                    echo '<script>swal("Good job!", "You have subscribed to our newsletter!", "success")</script>';
+                                                    echo '<script>location.replace("contact.php")</script>';
+                                                } else{
+                                                    echo mysqli_error($query);
+                                                }
+                                            }
+                                        ?>
                                     </form>
                                 </div>
                             </div>

@@ -49,7 +49,7 @@ if (isset($_SESSION['sessionid'])) {
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Newsletters Subscribers</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -70,22 +70,28 @@ if (isset($_SESSION['sessionid'])) {
                                                 <thead class="bg-light">
                                                     <tr class="border-0">
                                                         <th class="border-0">#</th>
-                                                        <th class="border-0">Email</th>
-                                                        <th class="border-0"> Date</th>
+                                                        <th class="border-0">Title</th>
+                                                        <th class="border-0">Banner</th>
+                                                        <th class="border-0"> Date Added</th>
+                                                        <th class="border-0"> location</th>
+                                                        <th class="border-0"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <?php
                                                     include '../connect.php';
 
-                                                    $query = mysqli_query($connect, "select distinct email from newsletters order by date desc");
+                                                    $query = mysqli_query($connect, "select distinct email from events order by id desc ");
 
                                                     $id = 1;
                                                     while ($row = mysqli_fetch_assoc($query)) {
                                                         echo '<tr>
                                                         <td>' . $id++ . '</td>
-                                                        <td>' . $row['email'] . '</td>
+                                                        <td>' . $row['title'] . '</td>
+                                                        <td><img src="./images/' . $row['image'] . '" class="img img-fluid" height="30" width="30"> </td>
                                                         <td>' . $row['date']. '</td>
+                                                        <td>' . $row['location'] . '</td>
+                                                        <td><a href="deleteevent.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i></a>&nbsp;<a href="updateevent.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i></a></td>
                                                     </tr>';
                                                     }
                                                     ?>

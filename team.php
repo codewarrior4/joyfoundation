@@ -78,7 +78,7 @@
                         <div class="team-grids clearfix">
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/IMG_3515.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/IMG_3515.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Folashade Logan</a></h3>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00004.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00004.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Frank Logan</a></h3>
@@ -96,7 +96,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00009.jpg" style="width: 400px !important;" alt>
+                                    <img loading="lazy=" src="assets/images/team/chioma.jpeg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Chioma Adigwe</a></h3>
@@ -105,7 +105,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00005.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00005.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Gbenga Dada</a></h3>
@@ -114,7 +114,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00003.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00003.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Awodele Seun</a></h3>
@@ -123,7 +123,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00008.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00008.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Oluwaseyifunmi Agunbiade</a></h3>
@@ -132,7 +132,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00007.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00007.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Godwin Ebisanmi</a></h3>
@@ -141,7 +141,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00010.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00010.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Ndubisi Adigwe</a></h3>
@@ -150,7 +150,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00002.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00002.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Temitope Raji</a></h3>
@@ -159,7 +159,7 @@
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/team/image00006.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/team/image00006.png" alt>
                                 </div>
                                 <div class="details">
                                     <h3><a href="#">Adetola Akinwunmi</a></h3>
@@ -179,14 +179,31 @@
                     <div class="row">
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
-                                <h3>Subscribe our Newsletter</h3>
+                                <h3>Subscribe to our Newsletter</h3>
                                 <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
-                                    <form>
+                                <form method="post" action="">
                                         <div>
-                                            <input type="text" placeholder="Enter Your Email" class="form-control">
-                                            <button class="bigCursor" type="submit">Subscribe</button>
+                                            <input type="email" name="email" placeholder="Enter Your Email" required class="form-control">
+                                            <button class="bigCursor" name="submit" type="submit">Subscribe</button>
                                         </div>
+                                        <?php
+                                            include 'zeus/connect.php';
+
+                                            if (isset($_POST['submit']))
+                                            {
+                                                
+                                                $email = $_POST['email'];
+                                                $query = mysqli_query($connect, "INSERT INTO newsletters values('','$email',now())");
+                                                if($query){
+                                                    //  header('Location:index.php');
+                                                    echo '<script>swal("Good job!", "You have subscribed to our newsletter!", "success")</script>';
+                                                    echo '<script>location.replace("team.php")</script>';
+                                                } else{
+                                                    echo mysqli_error($query);
+                                                }
+                                            }
+                                        ?>
                                     </form>
                                 </div>
                             </div>

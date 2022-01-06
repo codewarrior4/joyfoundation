@@ -23,6 +23,7 @@
     <link href="assets/css/nice-select.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/light.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body class="light-theme">
@@ -61,7 +62,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-img">
-                           <img src="assets/images/sade/image00010.jpeg" alt=""> 
+                           <img loading="lazy=" src="assets/images/sade/image00010.jpeg" alt=""> 
                             <div class="video-btn">
                                 <ul>
                                     <li><a href="https://www.youtube.com/embed/uQBL7pSAXR8?autoplay=1" class="video-btn" data-type="iframe">
@@ -83,7 +84,7 @@
                             <p> We at Joy Givers Charity Foundation (JFCF) are committed to honoring to the latter, the instruction of God in, Deuteronomy 15:11, “Therefore I command you, ‘You shall open wide your hand to your brother, to the needy and to the poor, in your land.” The truth we have discovered at JGCF, is that joy is a gift – the more we give it, the more we haveit.</p>
                             
                             <!-- <div class="signature">
-                                <img src="assets/images/img-1.png" alt="">
+                                <img loading="lazy=" src="assets/images/img-1.png" alt="">
                             </div> -->
                         </div>
                     </div>
@@ -98,7 +99,7 @@
                             <p class="lead">Through harnessing a network of donors and volunteers across the globe, Joy Givers Charity Foundation works to provide support and care for the less privileged, abandoned and neglected members of our societies.</p>
                             
                             <!-- <div class="signature">
-                                <img src="assets/images/img-1.png" alt="">
+                                <img loading="lazy=" src="assets/images/img-1.png" alt="">
                             </div> -->
                         </div>
                     </div>
@@ -113,7 +114,7 @@
                             <p class="lead">Our dedicated team have been working to design and implement compassionate programs and initiatives to provide support for the needy—in terms of food, shelter, medical care and everything that supports comfortable living.  We are also involved in advocacy—we lend our voice to issues to do with the welfare of the less privileged by engaging with governments and various other institutions.</p>
                             
                             <!-- <div class="signature">
-                                <img src="assets/images/img-1.png" alt="">
+                                <img loading="lazy=" src="assets/images/img-1.png" alt="">
                             </div> -->
                         </div>
                     </div>
@@ -121,45 +122,7 @@
             </div>
         </div>
         <!-- about-area end-->
-        <div class="features-area features-area-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-salad"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Health For</p>
-                                <h3>Healthy Food</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-school"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Get Free</p>
-                                <h3>Pure Education</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-medicine"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Get Free</p>
-                                <h3>Medical Facilities</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- <div class="tp-counter-area">
             <div class="container">
@@ -203,14 +166,31 @@
                     <div class="row">
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
-                                <h3>Subscribe our Newsletter</h3>
+                                <h3>Subscribe to our Newsletter</h3>
                                 <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
-                                    <form>
+                                    <form method="post" action="">
                                         <div>
-                                            <input type="text" placeholder="Enter Your Email" class="form-control">
-                                            <button class="bigCursor" type="submit">Subscribe</button>
+                                            <input type="email" name="email" placeholder="Enter Your Email" required class="form-control">
+                                            <button class="bigCursor" name="submit" type="submit">Subscribe</button>
                                         </div>
+                                        <?php
+                                            include 'zeus/connect.php';
+
+                                            if (isset($_POST['submit']))
+                                            {
+                                                
+                                                $email = $_POST['email'];
+                                                $query = mysqli_query($connect, "INSERT INTO newsletters values('','$email',now())");
+                                                if($query){
+                                                    //  header('Location:index.php');
+                                                    echo '<script>swal("Good job!", "You have subscribed to our newsletter!", "success")</script>';
+                                                    echo '<script>location.replace("about.php")</script>';
+                                                } else{
+                                                    echo mysqli_error($query);
+                                                }
+                                            }
+                                        ?>
                                     </form>
                                 </div>
                             </div>

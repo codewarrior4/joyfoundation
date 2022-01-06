@@ -52,7 +52,7 @@
                         <div class="tp-breadcumb-wrap">
                             <h2>Our Gallery</h2>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><span>Gallery</span></li>
                             </ul>
                         </div>
@@ -74,7 +74,7 @@
                         <div class="event-grids clearfix">
                             <div class="grid">
                                 <div class="img-holder">
-                                    <img src="assets/images/event/img-1.jpg" alt>
+                                    <img loading="lazy=" src="assets/images/event/img-1.jpg" alt>
                                 </div>
                                 <div class="details">
                                     <ul class="entry-meta">
@@ -112,40 +112,7 @@
         </section>
         <!-- end event-section -->
         <!-- .tp-counter-area start -->
-        <div class="tp-counter-area v2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="tp-counter-grids">
-                            <div class="grid">
-                                <div>
-                                    <h2><span class="odometer" data-count="6200">00</span>+</h2>
-                                </div>
-                                <p>Donation</p>
-                            </div>
-                            <div class="grid">
-                                <div>
-                                    <h2><span class="odometer" data-count="80">00</span>+</h2>
-                                </div>
-                                <p>Fund Raised</p>
-                            </div>
-                            <div class="grid">
-                                <div>
-                                    <h2><span class="odometer" data-count="245">00</span>+</h2>
-                                </div>
-                                <p>Volunteers</p>
-                            </div>
-                            <div class="grid">
-                                <div>
-                                    <h2><span class="odometer" data-count="605">00</span>+</h2>
-                                </div>
-                                <p>Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <!-- .tp-counter-area end -->
         <!-- news-letter-section start-->
         <section class="news-letter-section s2 ds2">
@@ -154,14 +121,31 @@
                     <div class="row">
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
-                                <h3>Subscribe our Newsletter</h3>
+                                <h3>Subscribe to our Newsletter</h3>
                                 <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
-                                    <form>
+                                <form method="post" action="">
                                         <div>
-                                            <input type="text" placeholder="Enter Your Email" class="form-control">
-                                            <button class="bigCursor" type="submit">Subscribe</button>
+                                            <input type="email" name="email" placeholder="Enter Your Email" required class="form-control">
+                                            <button class="bigCursor" name="submit" type="submit">Subscribe</button>
                                         </div>
+                                        <?php
+                                            include 'zeus/connect.php';
+
+                                            if (isset($_POST['submit']))
+                                            {
+                                                
+                                                $email = $_POST['email'];
+                                                $query = mysqli_query($connect, "INSERT INTO newsletters values('','$email',now())");
+                                                if($query){
+                                                    //  header('Location:index.php');
+                                                    echo '<script>swal("Good job!", "You have subscribed to our newsletter!", "success")</script>';
+                                                    echo '<script>location.replace("gallery.php")</script>';
+                                                } else{
+                                                    echo mysqli_error($query);
+                                                }
+                                            }
+                                        ?>
                                     </form>
                                 </div>
                             </div>

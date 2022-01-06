@@ -119,7 +119,7 @@ if (isset($_SESSION['sessionid'])) {
                                              $query = mysqli_query($connect, $insert);
                                              if($query){
                                                 //  header('Location:index.php');
-                                                echo '<script>alert("Events Added");<script>';
+                                                echo '<script>alert("Events Added");</script>';
                                                 echo '<script>window.location.replace("index.php")</script>';
                                              } else{
                                                  echo mysqli_error($query);

@@ -61,7 +61,7 @@
                 <div class="row mb-5">
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-img">
-                           <img src="assets/images/sade/image00020.jpg" alt=""> 
+                           <img loading="lazy=" src="assets/images/sade/image00020.jpg" alt=""> 
                            
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                             <p class="lead">We support the elderly financially so that  they  have access to food, shelter, clothing and medical care. Our team also build friendships with them by paying them regularly visits to eliminate loneliness, keep them happy and positive about life</p>
                             
                             <!-- <div class="signature">
-                                <img src="assets/images/img-1.png" alt="">
+                                <img loading="lazy=" src="assets/images/img-1.png" alt="">
                             </div> -->
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-img">
-                           <img src="assets/images/sade/image00011.jpg" alt=""> 
+                           <img loading="lazy=" src="assets/images/sade/image00011.jpg" alt=""> 
                            
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-img">
-                           <img src="assets/images/sade/images.jfif" alt=""> 
+                           <img loading="lazy=" src="assets/images/sade/images.jfif" alt=""> 
                            
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-img">
-                           <img src="assets/images/sade/image00097.jpeg" alt=""> 
+                           <img loading="lazy=" src="assets/images/sade/image00097.jpeg" alt=""> 
                            
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                             <p class="lead">We believe that education puts children on the path to success in life. Joy Givers Charity Foundation provides quality educational opportunities to brilliant children from poor families by providing them scholarships to best schools in our communities. It is our joy to see these children reach their full potential in life</p>
                             
                             <!-- <div class="signature">
-                                <img src="assets/images/img-1.png" alt="">
+                                <img loading="lazy=" src="assets/images/img-1.png" alt="">
                             </div> -->
                         </div>
                     </div>
@@ -135,7 +135,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-12">
                         <div class="about-img">
-                           <img src="assets/images/sade/image00101.jpeg" alt=""> 
+                           <img loading="lazy=" src="assets/images/sade/image00101.jpeg" alt=""> 
                            
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                             <p class="lead">We provide one time emergency financial help such as paying hospital bills, house rent, financial empowerment etc depending on the case of the individual</p>
                             
                             <!-- <div class="signature">
-                                <img src="assets/images/img-1.png" alt="">
+                                <img loading="lazy=" src="assets/images/img-1.png" alt="">
                             </div> -->
                         </div>
                     </div>
@@ -155,81 +155,8 @@
                
             </div>
         </div>
-        <!-- about-area end-->
-        <div class="features-area features-area-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-salad"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Health For</p>
-                                <h3>Healthy Food</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-school"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Get Free</p>
-                                <h3>Pure Education</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="features-item-2">
-                            <div class="features-icon">
-                                <i class="fi flaticon-medicine"></i>
-                            </div>
-                            <div class="features-content">
-                                <p>Get Free</p>
-                                <h3>Medical Facilities</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="tp-counter-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="tp-counter-grids">
-                            <div class="grid">
-                                <div>
-                                    <h2><span class="odometer" data-count="6200">00</span>+</h2>
-                                </div>
-                                <p>Donation</p>
-                            </div>
-                            <div class="grid">
-                                <div>
-                                    <h2><span class="odometer" data-count="80">00</span>+</h2>
-                                </div>
-                                <p>Fund Raised</p>
-                            </div>
-                            <div class="grid">
-                                <div>
-                                    <h2><span class="odometer" data-count="245">00</span>+</h2>
-                                </div>
-                                <p>Volunteers</p>
-                            </div>
-                            <div class="grid">
-                                <div>
-                                    <h2><span class="odometer" data-count="605">00</span>+</h2>
-                                </div>
-                                <p>Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
+       
         
         <!-- news-letter-section start-->
         <section class="news-letter-section">
@@ -238,14 +165,31 @@
                     <div class="row">
                         <div class="col col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-2">
                             <div class="newsletter">
-                                <h3>Subscribe our Newsletter</h3>
+                                <h3>Subscribe to our Newsletter</h3>
                                 <p>Please subscribe to our periodic newsletter to obtain updates about our future projects. .</p>
                                 <div class="newsletter-form">
-                                    <form>
+                                <form method="post" action="">
                                         <div>
-                                            <input type="text" placeholder="Enter Your Email" class="form-control">
-                                            <button class="bigCursor" type="submit">Subscribe</button>
+                                            <input type="email" name="email" placeholder="Enter Your Email" required class="form-control">
+                                            <button class="bigCursor" name="submit" type="submit">Subscribe</button>
                                         </div>
+                                        <?php
+                                            include 'zeus/connect.php';
+
+                                            if (isset($_POST['submit']))
+                                            {
+                                                
+                                                $email = $_POST['email'];
+                                                $query = mysqli_query($connect, "INSERT INTO newsletters values('','$email',now())");
+                                                if($query){
+                                                    //  header('Location:index.php');
+                                                    echo '<script>swal("Good job!", "You have subscribed to our newsletter!", "success")</script>';
+                                                    echo '<script>location.replace("programmes.php")</script>';
+                                                } else{
+                                                    echo mysqli_error($query);
+                                                }
+                                            }
+                                        ?>
                                     </form>
                                 </div>
                             </div>

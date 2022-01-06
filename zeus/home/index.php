@@ -63,12 +63,14 @@ if (isset($_SESSION['sessionid'])) {
                         include '../connect.php';
                         $query_events = mysqli_query($connect, "SELECT count(*) as id from events ");
                         $query_gallery = mysqli_query($connect, "SELECT count(*) as id from gallery ");
+                        $query_newsletters = mysqli_query($connect, "SELECT  count(distinct email) as id from newsletters ");
 
                         $total_events = mysqli_fetch_array($query_events);
                         $total_gallery = mysqli_fetch_array($query_gallery);
+                        $total_newsletters = mysqli_fetch_array($query_newsletters);
                         ?>
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="text-muted"><center>Total Events Post</center> </h5>
@@ -78,12 +80,22 @@ if (isset($_SESSION['sessionid'])) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="text-muted"><center>Total Gallery Post</center> </h5>
                                         <div class="metric-value d-inline-block">
                                             <center><h1 class="text-center"><a href="gallery_details.php"> <?php echo $total_gallery['id'] ?></a></h1></center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="text-muted"><center>Total Subscribers</center> </h5>
+                                        <div class="metric-value d-inline-block">
+                                            <center><h1 class="text-center"><a href="newsletters.php"> <?php echo $total_newsletters['id'] ?></a></h1></center>
                                         </div>
                                     </div>
                                 </div>
