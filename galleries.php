@@ -23,11 +23,23 @@
     <link href="assets/css/nice-select.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/light.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <meta name="keywords" content="charity foundation quotes,charity foundation in usa,charity foundation in nigeria,charity foundation aims and objectives,Joy Givers Charity Foundation,Joy Givers,Joy Givers Charity, Givers Charity Foundation,">
+        <link rel="pingback" href="xmlrpc.php">
+        <meta property="og:url" content="https://joygiverscharity.com/">
+        <meta property="og:description" content="Joy Givers Charity Foundation is a non-profit organization established in Nigeria to serve humanity by extending hands of love and generosity to the less privileged, the downtrodden, the widows, the orphans, the rejected, the abandoned, the lowly in our communities. ">
+        <meta property="og:site_name" content="Joy Givers Charity Foundation">
+        <meta property="og:image" content="https://joygiverscharity.com/assets/images/logo.png">
+        <meta property="og:image:width" content="1500"/>
+        <meta property="og:image:height" content="249"/>
+        <meta itemprop="name" content="Joy Givers Charity Foundation"/>
+        <meta itemprop="url" content="https://joygiverscharity.com/"/>
+        <meta itemprop="description" content="Joy Givers Charity Foundation is a non-profit organization established in Nigeria to serve humanity by extending hands of love and generosity to the less privileged, the downtrodden, the widows, the orphans, the rejected, the abandoned, the lowly in our communities."/>
+        <meta name="twitter:title" content="Joy Givers Charity Foundation"/>
+        <meta name="twitter:url" content="https://joygiverscharity.com/"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" conten
 </head>
 
 <body class="light-theme">
