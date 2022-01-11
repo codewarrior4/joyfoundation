@@ -86,7 +86,7 @@
                         <div class="event-grids clearfix">
                             <?php 
                                 include 'zeus/connect.php';
-                                $query = mysqli_query($connect,"SELECT * FROM events order by date desc limit 3");
+                                $query = mysqli_query($connect,"SELECT * FROM events order by date desc limit 12");
                                 if (isset($_GET['pageno'])) {
                                     $pageno = $_GET['pageno'];
                                 } else {

@@ -95,9 +95,7 @@ if (isset($_SESSION['sessionid'])) { } else {
                                            
                                             <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Details</label>
-                                                <textarea class="form-control" id="summernote"  name="details" placeholder="Write Here" rows="15">
-                                              <?php echo $details ?>
-                                            </textarea>
+                                                <textarea class="form-control" id="summernote"  name="details" placeholder="Write Here" rows="15"><?php echo $details ?></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputText3" class="col-form-label">Location</label>
@@ -112,10 +110,16 @@ if (isset($_SESSION['sessionid'])) { } else {
                                     if (isset($_POST['update'])) {
                                         $title = addslashes($_POST['title']);
                                         $location = addslashes($_POST['location']);
-                                        $details = addslashes($_POST['details']);
-                                            $insert = "UPDATE events set details='$details',location= '" . $location . "',title= '" . $title . "' where id='$id' ";
+                                        $description = addslashes($_POST['details']);
+                                            $insert = "UPDATE events set details='$description',location='$location',title= '$title' where id='$id' ";
                                             $query = mysqli_query($connect, $insert);
-                                            echo '<script>location.replace("event_details.php")</script>';
+                                            if($query){
+                                                //  header('Location:index.php');
+                                                echo '<script>alert("Events Updated");</script>';
+                                                echo '<script>window.location.replace("event_details.php")</script>';
+                                             } else{
+                                                 echo mysqli_error($query);
+                                             }
                                     }
                                     ?>
                                 </div>
@@ -131,8 +135,10 @@ if (isset($_SESSION['sessionid'])) { } else {
     <!-- end main wrapper -->
     <!-- ============================================================== -->
     <!-- Optional JavaScript -->
-    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="../assets/summernote/summernote.js"></script>
+    <script src=./assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src=./assets/summernote/summernote.js"></script> -->
+    <script src=./assets/summernote/js/summernote.min.js"></script>
+
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
     <script src="../assets/libs/js/main-js.js"></script>

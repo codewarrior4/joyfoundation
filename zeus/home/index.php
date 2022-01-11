@@ -62,11 +62,11 @@ if (isset($_SESSION['sessionid'])) {
                         <?php
                         include '../connect.php';
                         $query_events = mysqli_query($connect, "SELECT count(*) as id from events ");
-                        $query_gallery = mysqli_query($connect, "SELECT count(*) as id from gallery ");
+                        $query_gallery = mysqli_query($connect, "SELECT * from gallery group by title");
                         $query_newsletters = mysqli_query($connect, "SELECT  count(distinct email) as id from newsletters ");
 
                         $total_events = mysqli_fetch_array($query_events);
-                        $total_gallery = mysqli_fetch_array($query_gallery);
+                        $total_gallery = mysqli_num_rows($query_gallery);
                         $total_newsletters = mysqli_fetch_array($query_newsletters);
                         ?>
                         <div class="row">
@@ -85,7 +85,7 @@ if (isset($_SESSION['sessionid'])) {
                                     <div class="card-body">
                                         <h5 class="text-muted"><center>Total Gallery Post</center> </h5>
                                         <div class="metric-value d-inline-block">
-                                            <center><h1 class="text-center"><a href="gallery_details.php"> <?php echo $total_gallery['id'] ?></a></h1></center>
+                                            <center><h1 class="text-center"><a href="gallery_details.php"> <?php echo $total_gallery ?></a></h1></center>
                                         </div>
                                     </div>
                                 </div>

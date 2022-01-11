@@ -62,10 +62,19 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="tp-breadcumb-wrap">
-                            <h2>Single Galery</h2>
+                            <h2>Single Gallery</h2>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><span>Galery</span></li>
+                                <li><a href="index.php">Home</a></li>
+                                <li><span>Gallery</span></li>
+                                <?php 
+                                include 'zeus/connect.php';
+                                $id = $_GET['id'];
+                                $query = mysqli_query($connect,"SELECT * FROM gallery where id ='$id'");
+                                $top = mysqli_fetch_array($query);
+                                    $title = $top['title'];
+                                    $image = $top['image'];
+                                    $youtube = $top['youtube'];
+                                ?>
                             </ul>
                         </div>
                     </div>
@@ -82,37 +91,28 @@
                             <div class="tp-case-details-text">
                                 <div id="Description">
                                     <div class="tp-case-details-img">
-                                        <img loading="lazy=" src="assets/images/event-details2.jpg" alt="">
+                                        <center><img loading="lazy=" src="zeus/home/images/<?=$image ?>" alt=""></center>
                                     </div>
                                     <div class="tp-case-content">
                                         <div class="tp-case-text-top">
                                             <h2>Many Children are suffering a lot for food.</h2>
                                             <div class="case-b-text">
-                                                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
-                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
-                                                <p>But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures.</p>
+                                                <p class="display-4 h2 font-weight-bold">Images</p>
+                                                <?php 
+                                                    $query = mysqli_query($connect,"select * from gallery where title ='$title'");
+                                                    while($row= mysqli_fetch_array($query)){?>
+                                                        <img src="zeus/home/gallery/<?=$row['description'] ?>" style="max-width: 100px;" class="pb-5 pr-5 img img-fluid" alt="">
+                                                   <?php }
+
+                                                ?>
                                             </div>
                                             <div class="case-bb-text">
-                                                <h3>Event Mission</h3>
-                                                <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure.</p>
-                                                <ul>
-                                                    <li>Save The Children’s Role In Fight Against Malnutrition Hailed</li>
-                                                    <li>Charity Can Help Make Smile Of Poor People</li>
-                                                    <li>Else he endures pains to avoid worse pains.</li>
-                                                    <li>We denounce with righteous indignation and dislike men. </li>
-                                                    <li>Financial Help For Poor Families</li>
-                                                </ul>
-                                            </div>
-                                            <div class="case-bb-text">
-                                                <h3>Event Loacation</h3>
+                                                <h3>Gallery Video</h3>
                                                 <div id="Map" class="tab-pane">
                                                     <div class="contact-map">
-                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671" allowfullscreen></iframe>
+                                                        <iframe src="<?=$youtube ?>" allowfullscreen></iframe>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="submit-area sub-btn">
-                                                <a href="donate.html" class="theme-btn submit-btn">Donate Now</a>
                                             </div>
                                         </div>
                                     </div>

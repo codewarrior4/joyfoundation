@@ -20,7 +20,15 @@ if (isset($_SESSION['sessionid'])) { } else {
     <link rel="stylesheet" href="../assets/vendor/datepicker/tempusdominus-bootstrap-4.css" />
     <link rel="stylesheet" href="../assets/vendor/inputmask/css/inputmask.css" />
     <link rel="stylesheet" href="../assets/summernote/summernote.css">
-
+    <style>
+        .container {
+      max-width: 450px;
+    }
+    .imgGallery img {
+      padding: 8px;
+      max-width: 100px;
+    }  
+    </style>
 </head>
 
 <body>
@@ -60,7 +68,7 @@ if (isset($_SESSION['sessionid'])) { } else {
                                 </div>
                             </div>
                         </div>
-
+                        <?php include 'file-upload.php'?>
                         <!-- ============================================================== -->
                         <!-- basic form  -->
                         <!-- ============================================================== -->
@@ -83,41 +91,58 @@ if (isset($_SESSION['sessionid'])) { } else {
                                                 <input id="inputPassword" name="image" type="file" placeholder="Password" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Add Images and Pictures</label>
-                                                <textarea class="form-control" id="summernote" name="details" placeholder="Write Here" rows="15" cols="15">
-                                                    
-                                                </textarea>
+                                                <label for="inputPassword">Youtube url</label>
+                                                <input id="inputPassword" name="youtube" type="url" placeholder="https://youtu.be/watch?" class="form-control">
                                             </div>
-                                            <button class="btn btn-primary" name="register" type="submit">Add Gallery</button>
+                                            <div class="form-group">
+                                                <label for="chooseFile">Add Images and Pictures</label>
+                                                <input id="chooseFile" name="fileUpload[]" type="file"multiple class="form-control">
+
+                                            </div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="imgGallery">
+                                                        <!-- image preview -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <?php if(!empty($response)) {?>
+                                                    <div class="alert <?php echo $response["status"]; ?>">
+                                                    <?php echo $response["message"]; ?>
+                                                    </div>
+                                                <?php }?>
+                                            </div>
+                                            <button class="btn btn-primary" name="register" type="submit">Add To Gallery</button>
                                         </form>
                                     </div>
                                     <?php
-                                    include '../connect.php';
+                                    // include '../connect.php';
 
-                                    if (isset($_POST['register'])) {
-                                        echo $title = addslashes($_POST['title']);
-                                        echo $date = addslashes($_POST['date']);
-                                        echo $details = addslashes($_POST['details']);
-                                        $rand = rand(100000000, 999999999);
+                                    // if (isset($_POST['register'])) {
+                                    //     echo $title = addslashes($_POST['title']);
+                                    //     echo $date = addslashes($_POST['date']);
+                                    //     echo $details = addslashes($_POST['details']);
+                                    //     $rand = rand(100000000, 999999999);
                                         
-                                        $file1 = $rand . $_FILES["image"]["name"];
-                                        $filetmp1 = $_FILES['image']["tmp_name"];
+                                    //     $file1 = $rand . $_FILES["image"]["name"];
+                                    //     $filetmp1 = $_FILES['image']["tmp_name"];
 
-                                            $destination = "images/" . $file1;
-                                            move_uploaded_file($filetmp1, $destination);
+                                    //         $destination = "images/" . $file1;
+                                    //         move_uploaded_file($filetmp1, $destination);
 
-                                            $insert = "INSERT INTO gallery values('','$title','$file1','$details','$date')";
-                                            $query = mysqli_query($connect, $insert);
-                                            if($query){
-                                                //  header('Location:index.php');
-                                                echo '<script>alert("Events Added");</script>';
-                                                echo '<script>window.location.replace("index.php")</script>';
-                                             } else{
-                                                 echo @mysqli_error($query);
-                                             }
+                                    //         $insert = "INSERT INTO gallery values('','$title','$file1','$details','$date')";
+                                    //         $query = mysqli_query($connect, $insert);
+                                    //         if($query){
+                                    //             //  header('Location:index.php');
+                                    //             echo '<script>alert("Events Added");</script>';
+                                    //             echo '<script>window.location.replace("index.php")</script>';
+                                    //          } else{
+                                    //              echo @mysqli_error($query);
+                                    //          }
                                            
-                                    }
-                                    ?>
+                                    // }
+                                     ?>
                                 </div>
                             </div>
                         </div>
@@ -138,58 +163,34 @@ if (isset($_SESSION['sessionid'])) { } else {
 
     <script src="../assets/libs/js/main-js.js"></script>
     <script src="../assets/vendor/inputmask/js/jquery.inputmask.bundle.js"></script>
-    <script>
-        $(function(e) {
-            "use strict";
-            $(".date-inputmask").inputmask("dd/mm/yyyy"),
-                $(".phone-inputmask").inputmask("(999) 999-9999"),
-                $(".international-inputmask").inputmask("+9(999)999-9999"),
-                $(".xphone-inputmask").inputmask("(999) 999-9999 / x999999"),
-                $(".purchase-inputmask").inputmask("aaaa 9999-****"),
-                $(".cc-inputmask").inputmask("9999 9999 9999 9999"),
-                $(".ssn-inputmask").inputmask("999-99-9999"),
-                $(".isbn-inputmask").inputmask("999-99-999-9999-9"),
-                $(".currency-inputmask").inputmask("$9999"),
-                $(".percentage-inputmask").inputmask("99%"),
-                $(".decimal-inputmask").inputmask({
-                    alias: "decimal",
-                    radixPoint: "."
-                }),
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-                $(".email-inputmask").inputmask({
-                    mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[*{2,6}][*{1,2}].*{1,}[.*{2,6}][.*{1,2}]",
-                    greedy: !1,
-                    onBeforePaste: function(n, a) {
-                        return (e = e.toLowerCase()).replace("mailto:", "")
-                    },
-                    definitions: {
-                        "*": {
-                            validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~/-]",
-                            cardinality: 1,
-                            casing: "lower"
-                        }
-                    }
-                })
+    <script>
+    $(function () {
+        // Multiple images preview with JavaScript
+        var multiImgPreview = function (input, imgPreviewPlaceholder) {
+
+        if (input.files) {
+            var filesAmount = input.files.length;
+
+            for (i = 0; i < filesAmount; i++) {
+            var reader = new FileReader();
+
+            reader.onload = function (event) {
+                $($.parseHTML('<img height="150" width="150" class="img img-thumbnail">')).attr('src', event.target.result).appendTo(imgPreviewPlaceholder);
+            }
+
+            reader.readAsDataURL(input.files[i]);
+            }
+        }
+
+        };
+
+        $('#chooseFile').on('change', function () {
+        multiImgPreview(this, 'div.imgGallery');
         });
+    });
     </script>
-     
-     <script>
-        
-      
-        
-        $(document).ready(function() {
-             $('#summernote').summernote(
-                 
-                 {
-                     height: 400,                 // set editor height
-                minHeight: null,             // set minimum height of editor
-                maxHeight: null,             // set maximum height of editor
-                focus: false 
-                 }
-                 );
-                  
-            });
-</script>
 </body>
 
 </html>

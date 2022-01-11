@@ -84,39 +84,55 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="event-grids clearfix">
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img loading="lazy=" src="assets/images/event/img-1.jpg" alt>
-                                </div>
-                                <div class="details">
-                                    <ul class="entry-meta">
-                                        <li><a href="#"><i class="ti-calendar"></i> 20 sep 2018</a></li>
-                                    </ul>
-                                    <h3><a href="galleries.php">Education for All Children</a></h3>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/event/img-2.jpg" alt>
-                                </div>
-                                <div class="details">
-                                    <ul class="entry-meta">
-                                        <li><a href="#"><i class="ti-calendar"></i> 20 sep 2018</a></li>
-                                    </ul>
-                                    <h3><a href="galleries.php">Food for All Everyone</a></h3>
-                                </div>
-                            </div>
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/event/img-3.jpg" alt>
-                                </div>
-                                <div class="details">
-                                    <ul class="entry-meta">
-                                        <li><a href="#"><i class="ti-calendar"></i> 20 sep 2018</a></li>
-                                    </ul>
-                                    <h3><a href="galleries.php">Free Treatment</a></h3>
-                                </div>
-                            </div>
+                        <?php 
+                                include 'zeus/connect.php';
+                                $query = mysqli_query($connect,"SELECT * FROM gallery group by title order by date desc limit 12");
+                                if (isset($_GET['pageno'])) {
+                                    $pageno = $_GET['pageno'];
+                                } else {
+                                    $pageno = 1;
+                                }
+                                $no_of_records_per_page = 10;
+                                $offset = ($pageno-1) * $no_of_records_per_page;
+                                $total_pages_sql = "SELECT COUNT(*) FROM gallery group by title ";
+                                $result = mysqli_query($connect,$total_pages_sql);
+                                $total_rows = mysqli_fetch_array($result)[0];
+                                $total_pages = ceil($total_rows / $no_of_records_per_page);
+                                $sql = "SELECT * FROM gallery group by title  LIMIT $offset, $no_of_records_per_page";
+                                $res_data = mysqli_query($connect,$sql);
+                                while($row = mysqli_fetch_array($res_data)){ ?>
+                                    <div class="grid">
+                                        <div class="img-holder">
+                                            <img loading="lazy=" src="zeus/home/images/<?=$row['image'] ?>" alt>
+                                        </div>
+                                        <div class="details">
+                                            <ul class="entry-meta">
+                                                <li><a href="#"><i class="ti-calendar"></i> <?=$row['date'] ?></a></li>
+                                            </ul>
+                                            <h3><a href="galleries.php?id=<?=$row['id'] ?>"><?=$row['title'] ?></a></h3>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-offset-5">
+                        <div class="pagination-wrapper pagination-wrapper-left">
+                            <ul class="pg-pagination">
+                                <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?>">
+                                    <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>" aria-label="Previous">
+                                        <i class="fi ti-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li><a href="?pageno=1">First</a></li>
+                                <li><a href="?pageno=<?php echo $total_pages; ?>">Last</a></li>
+                                <li class="<?php if($pageno >= $total_pages){ echo 'disabled'; } ?>">
+                                    <a href="<?php if($pageno >= $total_pages){ echo '#'; } else { echo "?pageno=".($pageno + 1); } ?>" aria-label="Next">
+                                        <i class="fi ti-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

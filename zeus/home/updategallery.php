@@ -69,6 +69,7 @@ if (isset($_SESSION['sessionid'])) { } else {
                         $query = mysqli_query($connect, "select * from gallery where id='$id' ");
                         while ($row = mysqli_fetch_assoc($query)) {
                             $title = $row['title'];
+                            $youtube = $row['youtube'];
                             $details = $row['description'];
                             $date = $row['date'];
                         }
@@ -87,11 +88,11 @@ if (isset($_SESSION['sessionid'])) { } else {
                                                 <label for="inputText3" class="col-form-label">Date </label>
                                                 <input id="inputText3" name="date" value="<?php echo $date ?>" type="date" required class="form-control">
                                             </div>
-                                            
                                             <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Details</label>
-                                                <textarea class="form-control" id="summernote"  name="description" placeholder="Write Here" rows="15"><?php echo $details ?></textarea>
+                                                <label for="inputText3" class="col-form-label">Youtube </label>
+                                                <input id="inputText3" name="youtube" value="<?php echo $youtube ?>" type="url" required class="form-control">
                                             </div>
+                                            
                                             <button class="btn btn-primary" name="update" type="submit">Edit Gallery</button>
                                         </form>
                                     </div>
@@ -99,11 +100,12 @@ if (isset($_SESSION['sessionid'])) { } else {
                                include '../connect.php';
 
                                     if (isset($_POST['update'])) {
-                                        $title = addslashes($_POST['title']);
-                                        echo $description = addslashes($_POST['description']);
-                                        $date = addslashes($_POST['date']);
+                                        $title = trim($_POST['title']);
+                                        $youtube = trim($_POST['youtube']);
+                                        $description = trim($_POST['description']);
+                                        $date = trim($_POST['date']);
                                     
-                                            $insert = "UPDATE gallery set title=' " . $title . "', date='" . $date . "',description='$description'  where id='$id' ";
+                                            $insert = "UPDATE gallery set title=' " . $title . "', youtube=' " . $youtube . "', date='" . $date . "',description='$description'  where title='$id' ";
                                             $query = mysqli_query($connect, $insert);
 
                                             echo '<script>location.replace("gallery_details.php")</script>';

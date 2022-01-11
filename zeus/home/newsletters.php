@@ -63,38 +63,31 @@ if (isset($_SESSION['sessionid'])) {
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
                                 <div class="card">
-                                    <h5 class="card-header">All Blog Post</h5>
+                                    <h5 class="card-header">Newsletters</h5>
                                     <div class="card-body p-0">
                                         <div class="table-responsive  table-striped">
                                             <table class="table">
                                                 <thead class="bg-light">
                                                     <tr class="border-0">
                                                         <th class="border-0">#</th>
-                                                        <th class="border-0">Title</th>
-                                                        <th class="border-0">Banner</th>
-                                                        <th class="border-0"> Date Added</th>
-                                                        <th class="border-0"> location</th>
-                                                        <th class="border-0"></th>
+                                                        <th class="border-0">Email</th>
+                                                        <th class="border-0"> Date</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <?php
                                                     include '../connect.php';
 
-                                                    $query = mysqli_query($connect, "select distinct email from events order by id desc ");
+                                                    $query = mysqli_query($connect, "select distinct email,date from newsletters order by id desc");
 
                                                     $id = 1;
-                                                    while ($row = mysqli_fetch_assoc($query)) {
-                                                        echo '<tr>
-                                                        <td>' . $id++ . '</td>
-                                                        <td>' . $row['title'] . '</td>
-                                                        <td><img src="./images/' . $row['image'] . '" class="img img-fluid" height="30" width="30"> </td>
-                                                        <td>' . $row['date']. '</td>
-                                                        <td>' . $row['location'] . '</td>
-                                                        <td><a href="deleteevent.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i></a>&nbsp;<a href="updateevent.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i></a></td>
-                                                    </tr>';
-                                                    }
-                                                    ?>
+                                                    while ($row = mysqli_fetch_array($query)) { ?>
+                                                        <tr>
+                                                        <td><?= $id++  ?></td>
+                                                        <td><?= $row['email']  ?></td>
+                                                        <td><?= $row['date'] ?></td>
+                                                    </tr>
+                                                   <?php } ?>
                                                 </tbody>
                                             </table>
                                         </div>

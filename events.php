@@ -64,7 +64,7 @@
                         <div class="tp-breadcumb-wrap">
                             <h2>Single Event</h2>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><span>Event</span></li>
                                 <?php 
                                 include 'zeus/connect.php';

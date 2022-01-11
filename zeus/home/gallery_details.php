@@ -81,7 +81,7 @@ if (isset($_SESSION['sessionid'])) {
                                                     <?php
                                                     include '../connect.php';
 
-                                                    $query = mysqli_query($connect, "select * from gallery ");
+                                                    $query = mysqli_query($connect, "select * from gallery group by title order by id desc");
 
                                                     $id = 1;
                                                     while ($row = mysqli_fetch_assoc($query)) {
@@ -90,7 +90,7 @@ if (isset($_SESSION['sessionid'])) {
                                                         <td>' . $row['title'] . '</td>
                                                         <td><img src="./images/' . $row['image'] . '" class="img img-fluid" height="30" width="30"> </td>
                                                         <td>' . $row['date'] . '</td>
-                                                        <td><a href="deletegallery.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i></a> <a href="updategallery.php?id=' . $row['id'] . '"><i class="fas fa-edit"></i></a> </td>
+                                                        <td><a href="deletegallery.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i></a></td>
                                                     </tr>';
                                                     }
                                                     ?>
