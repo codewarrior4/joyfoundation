@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="wpoceans">
     <title>Joy Givers Charity Foundation - HomePage</title>
-    <link href="assets/css/themify-icons.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/cd-themify-icons@0.0.1/index.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="assets/css/owl.theme.css" rel="stylesheet">
-    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
     <link href="assets/css/slick-theme.css" rel="stylesheet">
-    <link href="assets/css/swiper.min.css" rel="stylesheet">
-    <link href="assets/css/owl.transitions.css" rel="stylesheet">
-    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
-    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
-    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/light.css" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -39,21 +39,21 @@
         <meta name="twitter:title" content="Joy Givers Charity Foundation"/>
         <meta name="twitter:url" content="https://joygiverscharity.com/"/>
         <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:description" conten
+        <meta name="twitter:description" content=""/>
 </head>
 
 <body class="light-theme">
     <!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="sk-folding-cube">
                 <div class="sk-cube1 sk-cube"></div>
                 <div class="sk-cube2 sk-cube"></div>
                 <div class="sk-cube4 sk-cube"></div>
                 <div class="sk-cube3 sk-cube"></div>
             </div>
-        </div>
+        </div> -->
         <!-- end preloader -->
         <!-- Start header -->
         <?php include 'header.php' ?>
@@ -133,7 +133,7 @@
                             <img loading="lazy=" src="assets/images/sade/image00010.jpeg" alt="">
                             <div class="video-btn">
                                 <ul>
-                                    <li><a href="https://www.youtube.com/embed/uQBL7pSAXR8?autoplay=1" class="video-btn" data-type="iframe">
+                                    <li><a href="https://www.youtube.com/embed/RtztnRYQa40?autoplay=1" class="video-btn" data-type="iframe">
                                             <i class="fi flaticon-play-button"></i>
                                         </a>
                                     </li>
@@ -213,8 +213,8 @@
                         </div>
                         <div class="gallery-container gallery-fancybox masonry-gallery">
                             <div class="grid Charity Volunteering Sponsorship">
-                                <a href="galleries.php" class="fancybox" data-fancybox-group="gall-1">
-                                    <img loading="lazy=" src="assets/images/gallery/img-1.jpg" alt class="img img-responsive">
+                                <a href="assets/images/gallery/image00004.JPG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00004.JPG" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -226,8 +226,8 @@
                                 </a>
                             </div>
                             <div class="grid Child Charity Volunteering">
-                                <a href="assets/images/gallery/img-2.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img loading="lazy=" src="assets/images/gallery/img-2.jpg" alt class="img img-responsive">
+                                <a href="assets/images/gallery/image00001.JPG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00001.JPG" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -238,8 +238,8 @@
                                 </a>
                             </div>
                             <div class="grid Charity Sponsorship">
-                                <a href="assets/images/gallery/img-3.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img loading="lazy=" src="assets/images/gallery/img-3.jpg" alt class="img img-responsive">
+                                <a href="assets/images/gallery/image00002.JPG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00002.JPG" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -250,8 +250,8 @@
                                 </a>
                             </div>
                             <div class="grid Child Volunteering">
-                                <a href="assets/images/gallery/img-4.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img loading="lazy=" src="assets/images/gallery/img-4.jpg" alt class="img img-responsive">
+                                <a href="assets/images/gallery/image00003.JPG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00003.JPG" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -262,8 +262,8 @@
                                 </a>
                             </div>
                             <div class="grid Charity Sponsorship">
-                                <a href="assets/images/gallery/img-5.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img loading="lazy=" src="assets/images/gallery/img-5.jpg" alt class="img img-responsive">
+                                <a href="assets/images/gallery/image00005.JPG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00005.JPG" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -274,8 +274,44 @@
                                 </a>
                             </div>
                             <div class="grid Child Charity Sponsorship Volunteering">
-                                <a href="assets/images/gallery/img-6.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img loading="lazy=" src="assets/images/gallery/img-6.jpg" alt class="img img-responsive">
+                                <a href="assets/images/gallery/image00006.JPG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00006.JPG" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <div class="parallax-wrap">
+                                            <div class="parallax-element">
+                                                <i class="ti-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid Child Charity Sponsorship Volunteering">
+                                <a href="assets/images/gallery/image00037.JPG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00037.JPG" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <div class="parallax-wrap">
+                                            <div class="parallax-element">
+                                                <i class="ti-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid Child Charity Sponsorship Volunteering">
+                                <a href="assets/images/gallery/image00073.JPG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00073.JPG" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <div class="parallax-wrap">
+                                            <div class="parallax-element">
+                                                <i class="ti-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid Child Charity Sponsorship Volunteering">
+                                <a href="assets/images/gallery/image00074.PNG" class="fancybox" data-fancybox-group="gall-1">
+                                    <img loading="lazy=" src="assets/images/gallery/image00074.PNG" alt class="img img-responsive">
                                     <div class="icon">
                                         <div class="parallax-wrap">
                                             <div class="parallax-element">
@@ -288,6 +324,11 @@
                         </div>
                     </div>
                 </div> <!-- end row -->
+                <div class="row col-sm-offset-5">
+                            <div class="btns">
+                                <a href="gallery.php" class="theme-btn">See More</a>
+                            </div>
+                        </div>
             </div>
         </section>
         <!--End project area-->
@@ -297,7 +338,7 @@
                 <div class="row">
                     <div class="col col-lg-6 col-lg-offset-3">
                         <div class="section-title text-center">
-                            <span>Meet Our Team</span>
+                            <h2>Meet Our Team</h2>
                             <!-- <h2>Our Expert Volunteer</h2> -->
                         </div>
                     </div>
@@ -347,15 +388,14 @@
         <section class="event-section section-padding">
             <div class="container">
                 <div class="section-title text-center">
-                    <span>Our Events</span>
-                    <h2>Upcoming Events</h2>
+                    <h2>Our Events</h2>
                 </div>
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="event-grids clearfix">
                             <?php 
                                 include 'zeus/connect.php';
-                                $query = mysqli_query($connect,"SELECT * FROM events order by date desc limit 3");
+                                $query = mysqli_query($connect,"SELECT * FROM events order by id desc limit 3");
                                 while($row = mysqli_fetch_array($query)){ ?>
                                 <div class="grid">
                                     <div class="img-holder">
@@ -446,7 +486,7 @@
     <!-- All JavaScript files
     ================================================== -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Plugins for this template -->
     <script src="assets/js/jquery-plugin-collection.js"></script>
     <script src="assets/js/gsap.min.js"></script>

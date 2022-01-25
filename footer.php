@@ -15,7 +15,7 @@
                                         <li>
                                             <div class="parallax-wrap">
                                                 <div class="parallax-element">
-                                                    <a href="#">
+                                                    <a href="https://www.facebook.com/JoyGiversCharity/" target="_blank">
                                                         <i class="ti-facebook"></i>
                                                     </a>
                                                 </div>
@@ -24,8 +24,8 @@
                                         <li>
                                             <div class="parallax-wrap">
                                                 <div class="parallax-element">
-                                                    <a href="#">
-                                                        <i class="ti-twitter-alt"></i>
+                                                    <a href="https://instagram.com/joygiversfoundation" target="_blank">
+                                                        <i class="ti-instagram" target="_blank"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -33,17 +33,8 @@
                                         <li>
                                             <div class="parallax-wrap">
                                                 <div class="parallax-element">
-                                                    <a href="#">
-                                                        <i class="ti-instagram"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="parallax-wrap">
-                                                <div class="parallax-element">
-                                                    <a href="#">
-                                                        <i class="ti-google"></i>
+                                                    <a href="https://www.youtube.com/channel/UCxA1GMqsj_Q9l7yGJhA4uzw">
+                                                        <i class="ti-youtube" target="_blank"></i>
                                                     </a>
                                                 </div>
                                             </div>

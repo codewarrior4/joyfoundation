@@ -46,14 +46,14 @@
     <!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="sk-folding-cube">
                 <div class="sk-cube1 sk-cube"></div>
                 <div class="sk-cube2 sk-cube"></div>
                 <div class="sk-cube4 sk-cube"></div>
                 <div class="sk-cube3 sk-cube"></div>
             </div>
-        </div>
+        </div> -->
         <?php include 'header.php' ?>
         <!-- .tp-breadcumb-area start -->
         <div class="tp-breadcumb-area">

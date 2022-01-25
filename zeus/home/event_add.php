@@ -80,6 +80,10 @@ if (isset($_SESSION['sessionid'])) {
                                                 <input id="inputPassword" name="image" type="file" placeholder="Password" class="form-control">
                                             </div>
                                             <div class="form-group">
+                                                <label for="inputPassword">Event Date</label>
+                                                <input id="inputPassword" name="date" type="date" placeholder="" class="form-control">
+                                            </div>
+                                            <div class="form-group">
                                                 <label for="exampleFormControlTextarea1">Post Details</label>
                                                 <textarea class="form-control" id="summernote" name="details" placeholder="Write Here" rows="15" cols="15">
                                                     
@@ -100,10 +104,9 @@ if (isset($_SESSION['sessionid'])) {
                                      
                                         // $tag = addslashes($_POST['tag']);
                                         $location = addslashes($_POST['location']);
+                                        $date = addslashes($_POST['date']);
                                         $status = "1";
                                         $details = addslashes($_POST['details']);
-                                      
-                                        $day = date("d M Y");
                                         $time = date("H:i:s");
                                         $rand = rand(100000000, 999999999);
 
@@ -115,10 +118,9 @@ if (isset($_SESSION['sessionid'])) {
                                             $destination1 = "images/" . $file1;
                                              move_uploaded_file($filetmp1, $destination1);
 
-                                            $insert = "INSERT INTO events values('','$title','$file1','$destination1','$details','$location','$day','$time','$status')";
+                                            $insert = "INSERT INTO events values('','$title','$file1','$destination1','$details','$location','$date','$time','$status')";
                                              $query = mysqli_query($connect, $insert);
                                              if($query){
-                                                //  header('Location:index.php');
                                                 echo '<script>alert("Events Added");</script>';
                                                 echo '<script>window.location.replace("index.php")</script>';
                                              } else{

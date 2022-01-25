@@ -98,6 +98,10 @@ if (isset($_SESSION['sessionid'])) { } else {
                                                 <textarea class="form-control" id="summernote"  name="details" placeholder="Write Here" rows="15"><?php echo $details ?></textarea>
                                             </div>
                                             <div class="form-group">
+                                                <label for="inputPassword">Event Date</label>
+                                                <input id="inputPassword" name="date" type="date" placeholder="" class="form-control">
+                                            </div>
+                                            <div class="form-group">
                                                 <label for="inputText3" class="col-form-label">Location</label>
                                                 <input id="inputText3"value="<?php echo $location ?>"  name="location" type="text" class="form-control">
                                             </div>
@@ -109,9 +113,10 @@ if (isset($_SESSION['sessionid'])) { } else {
 
                                     if (isset($_POST['update'])) {
                                         $title = addslashes($_POST['title']);
+                                        $date = addslashes($_POST['date']);
                                         $location = addslashes($_POST['location']);
                                         $description = addslashes($_POST['details']);
-                                            $insert = "UPDATE events set details='$description',location='$location',title= '$title' where id='$id' ";
+                                            $insert = "UPDATE events set details='$description',location='$location',date='$date',title= '$title' where id='$id' ";
                                             $query = mysqli_query($connect, $insert);
                                             if($query){
                                                 //  header('Location:index.php');

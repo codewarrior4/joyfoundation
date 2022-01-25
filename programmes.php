@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="wpoceans">
     <title>Joy Givers Charity Foundation - Our Programmes</title>
-    <link href="assets/css/themify-icons.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/cd-themify-icons@0.0.1/index.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="assets/css/owl.theme.css" rel="stylesheet">
-    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
     <link href="assets/css/slick-theme.css" rel="stylesheet">
-    <link href="assets/css/swiper.min.css" rel="stylesheet">
-    <link href="assets/css/owl.transitions.css" rel="stylesheet">
-    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
-    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
-    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/light.css" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -39,21 +39,21 @@
         <meta name="twitter:title" content="Joy Givers Charity Foundation"/>
         <meta name="twitter:url" content="https://joygiverscharity.com/"/>
         <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:description" conten
+        <meta name="twitter:description" content=""/>
 </head>
 
 <body class="light-theme">
     <!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="sk-folding-cube">
                 <div class="sk-cube1 sk-cube"></div>
                 <div class="sk-cube2 sk-cube"></div>
                 <div class="sk-cube4 sk-cube"></div>
                 <div class="sk-cube3 sk-cube"></div>
             </div>
-        </div>
+        </div> -->
         <?php include 'header.php' ?>
         <!-- .tp-breadcumb-area start -->
         <div class="tp-breadcumb-area">
@@ -87,7 +87,7 @@
                             <div class="section-title">
                                 <h2>CARE FOR ELDERLY </h2>
                             </div>
-                            <p class="lead">We support the elderly financially so that  they  have access to food, shelter, clothing and medical care. Our team also build friendships with them by paying them regularly visits to eliminate loneliness, keep them happy and positive about life</p>
+                            <p class="lead">We support the elderly financially so that  they  have access to food, shelter, clothing and medical care. Our team also build friendships with them by paying them regularly visits to eliminate loneliness, keep them happy and positive about life.</p>
                             
                             <!-- <div class="signature">
                                 <img loading="lazy=" src="assets/images/img-1.png" alt="">
@@ -141,7 +141,7 @@
                             <div class="section-title">
                                 <h2>SCHOLARSHIP PROGRAMS</h2>
                             </div>
-                            <p class="lead">We believe that education puts children on the path to success in life. Joy Givers Charity Foundation provides quality educational opportunities to brilliant children from poor families by providing them scholarships to best schools in our communities. It is our joy to see these children reach their full potential in life</p>
+                            <p class="lead">We believe that education puts children on the path to success in life. Joy Givers Charity Foundation provides quality educational opportunities to brilliant children from poor families by providing them scholarships to best schools in our communities. It is our joy to see these children reach their full potential in life.</p>
                             
                             <!-- <div class="signature">
                                 <img loading="lazy=" src="assets/images/img-1.png" alt="">
@@ -161,7 +161,7 @@
                             <div class="section-title">
                                 <h2>EMERGENCY FINANCIAL ASSISTANCE </h2>
                             </div>
-                            <p class="lead">We provide one time emergency financial help such as paying hospital bills, house rent, financial empowerment etc depending on the case of the individual</p>
+                            <p class="lead">We provide one time emergency financial help such as paying hospital bills, house rent, financial empowerment etc depending on the case of the individual.</p>
                             
                             <!-- <div class="signature">
                                 <img loading="lazy=" src="assets/images/img-1.png" alt="">
