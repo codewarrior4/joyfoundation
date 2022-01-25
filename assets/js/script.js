@@ -133,6 +133,10 @@
         if ($(".hero-slider").length) {
             $(".hero-slider").slick({
                 arrows: true,
+                autoplay:true,
+                autoplaySpeed:2500,
+                pauseOnHover: false,
+      pauseOnFocus: false,
                 prevArrow: '<button type="button" class="slick-prev">Previous</button>',
                 nextArrow: '<button type="button" class="slick-next">Next</button>',
                 dots: true,
@@ -142,7 +146,7 @@
         }
     }
 
-    
+  
 
 /*------------------------------------------
     TweenMax Initialize  // quick ball gsap
@@ -274,6 +278,9 @@
     //Active heor slider
     heroSlider();
 
+    // $(document).ready(function($) {
+        
+    //   });
 
     $('.tp-payment-select .addToggle').on('click', function(){
     $('.payment-name').addClass('active')

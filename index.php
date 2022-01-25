@@ -11,7 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="assets/css/owl.theme.css" rel="stylesheet">
     <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
@@ -63,7 +63,7 @@
             <div class="hero-slider">
                 <div class="slide">
                     <div class="container">
-                        <img loading="lazy=" loading="lazy=" src="assets/images/sade/image00017.jpg" alt class="slider-bg">
+                        <img loading="lazy="  src="assets/images/sade/image00017.jpg" alt class="slider-bg">
                         <div class="row">
                             <div class="col col-md-6 slide-caption">
                                 <div class="slide-title">
@@ -129,17 +129,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-12">
-                        <div class="about-img">
+                        <!-- <div class="about-img">
                             <img loading="lazy=" src="assets/images/sade/image00010.jpeg" alt="">
-                            <div class="video-btn">
-                                <ul>
+                            <div class="video-btn"> -->
+                                <iframe src="https://www.youtube.com/embed/RtztnRYQa40?autoplay=1" allowfullscreen width="100%" height="60%">
+                                    
+                                    </iframe>
+                                <!-- <ul>
                                     <li><a href="https://www.youtube.com/embed/RtztnRYQa40?autoplay=1" class="video-btn" data-type="iframe">
                                             <i class="fi flaticon-play-button"></i>
                                         </a>
                                     </li>
-                                </ul>
-                            </div>
-                        </div>
+                                </ul> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
                         <p class=" lead h2 text-center" style="color:black !important;font-weight:bold">Founder's Address</p>
                     </div>
                     <div class="col-md-6 col-sm-12 col-12">
@@ -486,6 +489,7 @@
     <!-- All JavaScript files
     ================================================== -->
     <script src="assets/js/jquery.min.js"></script>
+   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Plugins for this template -->
     <script src="assets/js/jquery-plugin-collection.js"></script>

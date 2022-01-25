@@ -77,17 +77,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-12">
-                        <div class="about-img">
-                           <img loading="lazy=" src="assets/images/sade/image00010.jpeg" alt=""> 
-                            <div class="video-btn">
-                                <ul>
-                                    <li><a href="https://www.youtube.com/embed/uQBL7pSAXR8?autoplay=1" class="video-btn" data-type="iframe">
-                                    <i class="fi flaticon-play-button"></i>
-                                    </a>
+                        <!-- <div class="about-img">
+                            <img loading="lazy=" src="assets/images/sade/image00010.jpeg" alt="">
+                            <div class="video-btn"> -->
+                            <iframe src="https://www.youtube.com/embed/RtztnRYQa40?autoplay=1" allowfullscreen width="100%" height="60%">
+                                    
+                                    </iframe>
+                                <!-- <ul>
+                                    <li><a href="https://www.youtube.com/embed/RtztnRYQa40?autoplay=1" class="video-btn" data-type="iframe">
+                                            <i class="fi flaticon-play-button"></i>
+                                        </a>
                                     </li>
-                                </ul>
-                            </div>
-                        </div>
+                                </ul> -->
+                            <!-- </div> -->
+                        <!-- </div> -->
                         <p class=" lead h2 text-center" style="color:black !important;font-weight:bold">Founder's Address</p>
 
                     </div>
